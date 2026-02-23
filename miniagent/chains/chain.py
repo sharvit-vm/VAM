@@ -1,9 +1,5 @@
-# chains/chain.py
-
 from typing import List
 from .baseComponent import Component
-
-
 class Chain:
 
     def __init__(self, components: List[Component]):

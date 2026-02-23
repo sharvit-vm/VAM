@@ -1,14 +1,12 @@
 from .baseAgent import Agent
 import re
-
-
 class CalculatorAgent(Agent):
 
     def extract_expression(self, query: str):
         match = re.search(r"\d+(\s*[\+\-\*/]\s*\d+)+", query)
         return match.group() if match else None
     
-    def can_handle(self, query: str) -> bool:
+    def canHandle(self, query: str) -> bool:
         return self.extract_expression(query) is not None
 
     def run(self, query: str) -> str:

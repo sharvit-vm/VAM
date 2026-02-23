@@ -4,7 +4,7 @@ class Agent(ABC):
         self.name = name
         self._calls = 0
     @abstractmethod
-    def can_handle(self, query: str) -> bool:
+    def canHandle(self, query: str) -> bool:
         #Return True if this agent can handle the query.
         pass
     @abstractmethod

@@ -5,6 +5,6 @@ class Router:
         self.agents = agents
     def route(self, query: str) -> str:
         for agent in self.agents:
-            if agent.can_handle(query):
+            if agent.canHandle(query):
                 return agent(query) 
         return "No suitable agent found."
