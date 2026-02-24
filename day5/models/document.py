@@ -1,7 +1,5 @@
 from pydantic import BaseModel, Field, field_validator, computed_field
 from datetime import datetime
-
-
 class DocumentInput(BaseModel):
     filename: str = Field(min_length=3)
     content: str
