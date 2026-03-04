@@ -1,0 +1,26 @@
+[
+    {
+        "filename": "sk.docx",
+        "word_count": 1529,
+        "file_type": ".docx",
+        "language": "English",
+        "processing_time_ms": 2804.3082000222057,
+        "created_at": "2026-03-03T09:13:50.100665Z"
+    },
+    {
+        "filename": "sk.pdf",
+        "word_count": 1122,
+        "file_type": ".pdf",
+        "language": "English",
+        "processing_time_ms": 1952.8687000274658,
+        "created_at": "2026-03-03T09:13:50.124065Z"
+    },
+    {
+        "filename": "sk.txt",
+        "word_count": 219,
+        "file_type": ".txt",
+        "language": "English",
+        "processing_time_ms": 1442.8989000152797,
+        "created_at": "2026-03-03T09:13:50.154037Z"
+    }
+]

@@ -1,0 +1,46 @@
+identify if there is an insurance on historical monument/religious places, what type of insurance and who insured them? 
+any new type or rare type of insurance. 
+
+------------------------------------------
+Insurance Fundamentals
+Aggregator: Who compares different policies 
+Distributor: who provides their own policies
+1. Insurance: Risk transfer mechanism, Policy holder(insured)-> insurer (insurance company)
+
+2. Pooling concept: Bringing similar type of risks together, ex: An auto insurance company provides auto insurances of all types, and they might have sub pools ex: Maharashtra, Telangana etc. or age groups. 
+
+3. Law of large numbers: 
+When a large number of similar risks are grouped together, the average outcome becomes more predictable.
+ 
+
+
+4. Risk: Possibility of loss 
+	4.1. Pure risk: Something which is definitely going to damage if it has to happen. 
+	4.2 speculative risk: ex: mutual funds, which can give us gains or loss. 
+
+5. Peril: reason behind the loss, ex: damage to house due to fire -> peril: fire. 
+	5.1 Open perils: Most of the coverages will be covered except exclusions. 
+	5.2 Named Perils: Only for specific perils the loss will be covered. 
+
+
+
+--------------------------------------------------------
+10-02-2026 
+
+#) Risk management process: 
+1. Identifying loss exposures: 
+	- Identify the properties to loss
+	- Peril 
+	
+2. Analyzing loss exposures. 
+
+
+
+
+
+
+
+
+// Risk, peril and hazard
+1. Hazard : is something that increases the likelihood of loss. 
+-Physical, moral and morale. 

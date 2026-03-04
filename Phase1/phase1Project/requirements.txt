@@ -1,0 +1,6 @@
+pydantic
+python-dotenv
+httpx
+PyPDF2
+python-docx
+pytest
