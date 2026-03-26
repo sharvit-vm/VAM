@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #settings 
-temperature = 0.8
+temperature = 0.7
 max_tokens=400
 
 print("choose model")
