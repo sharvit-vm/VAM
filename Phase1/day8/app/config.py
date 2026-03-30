@@ -3,13 +3,10 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, ValidationError
 
 load_dotenv()
-
-
 class Settings(BaseModel):
     api_key: str
     base_url: str
     model: str
-
     @classmethod
     def load(cls) -> "Settings":
         try:

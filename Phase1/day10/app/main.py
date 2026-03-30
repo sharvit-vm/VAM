@@ -10,23 +10,19 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Async Folder File Processor CLI"
     )
-
     parser.add_argument(
         "--folder",
         type=str,
         required=True,
         help="Path to folder containing files"
     )
-
     parser.add_argument(
         "--output",
         type=str,
         default="output.json",
         help="Output JSON file"
     )
-
     return parser.parse_args()
-
 
 async def run(folder: str, output: str):
     processor = FileProcessor(Path(folder))

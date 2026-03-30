@@ -12,7 +12,6 @@ config = ProcessingConfig(
     language="en"
 )
 summary = doc.content[:config.summary_length]
-
 keywords = [
     {"word": "Artificial Intelligence", "score": 0.95},
     {"word": "industries", "score": 0.88},

@@ -2,6 +2,7 @@ from typing import TypedDict, Annotated
 from operator import add
 from langgraph.graph import StateGraph, START, END
 
+#custom reducer to merge dictionaries. 
 def merge_dict(old, new):
     return {**old, **new}
 

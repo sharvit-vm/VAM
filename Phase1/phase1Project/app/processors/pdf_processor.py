@@ -1,7 +1,5 @@
 from .base import BaseProcessor
 from PyPDF2 import PdfReader
-
-
 class PdfProcessor(BaseProcessor):
     def extract_text(self) -> str:
         reader = PdfReader(self.filepath)

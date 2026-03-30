@@ -1,7 +1,6 @@
 from pydantic import BaseModel
 from pathlib import Path
 
-
 class FileResult(BaseModel):
     filename: str
     word_count: int

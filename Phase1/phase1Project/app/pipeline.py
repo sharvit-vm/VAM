@@ -31,7 +31,6 @@ class DocumentPipeline:
         return ProcessingResult(filename=filepath.name, word_count=processor.word_count(text),file_type=filepath.suffix,language=language,
         processing_time_ms=processing_time_ms,)
 
-
     async def run(self, files):
         tasks = [self.process_file(file) for file in files]
         return await asyncio.gather(*tasks) 
