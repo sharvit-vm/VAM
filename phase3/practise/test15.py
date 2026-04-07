@@ -1,3 +1,4 @@
+import asyncio
 from typing import TypedDict
 from langgraph.graph import StateGraph, START, END
 
@@ -5,10 +6,10 @@ class State(TypedDict):
     text: str
 
 def step1(state: State):
-    return {"text": "Step 1 done"}
+    return {"text": "Hello"}
 
 def step2(state: State):
-    return {"text": state["text"] + " → Step 2 done"}
+    return {"text": state["text"] + " World"}
 
 builder = StateGraph(State)
 
@@ -21,6 +22,8 @@ builder.add_edge("step2", END)
 
 graph = builder.compile()
 
-# 🔥 Streaming
-for event in graph.stream({"text": ""}):
-    print(event)
+async def run():
+    async for event in graph.astream_events({"text": ""}):
+        print(event)
+
+asyncio.run(run())

@@ -2,13 +2,15 @@ from typing import TypedDict
 from langgraph.graph import StateGraph, START, END
 
 class State(TypedDict):
-    text: str
+    status: str
 
 def step1(state: State):
-    return {"text": "Step 1 done"}
+    print("Running Step 1")
+    return {"status": "Step 1 done"}
 
 def step2(state: State):
-    return {"text": state["text"] + " → Step 2 done"}
+    print("Running Step 2")
+    return {"status": "Step 2 done"}
 
 builder = StateGraph(State)
 
@@ -21,6 +23,5 @@ builder.add_edge("step2", END)
 
 graph = builder.compile()
 
-# 🔥 Streaming
-for event in graph.stream({"text": ""}):
-    print(event)
+for event in graph.stream({"status": ""}):
+    print("Progress:", event)
